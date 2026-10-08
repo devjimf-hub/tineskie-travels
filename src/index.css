@@ -1,0 +1,278 @@
+/* =========================================================
+   TINESKIE TRAVEL — WIZ TRAVELS INSPIRED LIGHT GREEN THEME
+   Recreated accurately with Light Green tones instead of beige
+   ========================================================= */
+
+:root {
+  /* Light Green & Mint Palette (Replacing Wiz Travels Beige) */
+  --bg-primary: #F0F6F2;
+  --bg-surface: #E5F0E8;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FCFEFB;
+  
+  /* Green Accents */
+  --green-dark: #1B4332;
+  --green-primary: #2D6A4F;
+  --green-medium: #40916C;
+  --green-light: #52B788;
+  --green-mint: #74C69D;
+  --green-pastel: #D8F3DC;
+  --green-subtle: #EAF7ED;
+  --green-badge: #E0F2E6;
+
+  /* Accent Highlight */
+  --accent-gold: #E9C46A;
+  --accent-gold-light: #FEF7E5;
+
+  /* Typography Colors */
+  --text-heading: #132E22;
+  --text-body: #3D5A4C;
+  --text-muted: #6B8578;
+  --text-white: #FFFFFF;
+
+  /* Borders & Shadows */
+  --border-light: rgba(45, 106, 79, 0.12);
+  --border-hover: rgba(45, 106, 79, 0.3);
+  --border-dashed: 2px dashed rgba(45, 106, 79, 0.25);
+  
+  --shadow-sm: 0 2px 8px rgba(27, 67, 50, 0.04);
+  --shadow-card: 0 8px 24px -4px rgba(27, 67, 50, 0.07);
+  --shadow-card-hover: 0 16px 36px -6px rgba(27, 67, 50, 0.12);
+  --shadow-modal: 0 25px 60px -10px rgba(19, 46, 34, 0.2);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --font-sans: 'DM Sans', 'Inter', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-heading: 'DM Sans', sans-serif;
+
+  --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--green-mint);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green-primary);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Section Header (Wiz Travels exact style) */
+.section-header-wiz {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.75rem auto;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green-primary);
+  background: var(--green-badge);
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(45, 106, 79, 0.15);
+}
+
+.section-title-wiz {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.section-desc-wiz {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Cards (Wiz Travels style with Light Green borders) */
+.wiz-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.wiz-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+/* Coupon Card (Wiz Travels exact style) */
+.wiz-coupon {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justifyContent: space-between;
+}
+
+.wiz-coupon:hover {
+  border-color: var(--green-primary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Buttons */
+.btn-wiz {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-wiz-primary {
+  background: var(--green-primary);
+  color: #FFFFFF;
+}
+
+.btn-wiz-primary:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(27, 67, 50, 0.2);
+}
+
+.btn-wiz-outline {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-light);
+  color: var(--text-heading);
+}
+
+.btn-wiz-outline:hover {
+  background: var(--green-subtle);
+  border-color: var(--green-primary);
+  color: var(--green-primary);
+}
+
+.btn-wiz-sm {
+  padding: 0.45rem 1rem;
+  font-size: 0.82rem;
+}
+
+/* Badges */
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--green-badge);
+  color: var(--green-primary);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(19, 46, 34, 0.55);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content-wiz {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-modal);
+  max-width: 780px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalScale 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.section-spacing {
+  padding: 4.5rem 0;
+}
