@@ -198,10 +198,10 @@ export default function GearBagSection() {
           </div>
 
           <a 
-            href="#planner"
+            href="#itineraries"
             className="btn-wiz btn-wiz-primary btn-wiz-sm"
           >
-            <span>Plan My Trip Budget</span>
+            <span>Explore Itineraries</span>
             <ArrowRight size={14} />
           </a>
         </div>

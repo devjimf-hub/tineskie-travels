@@ -11,7 +11,6 @@ import {
   Sliders, 
   Video, 
   Sparkles,
-  Calculator,
   ChevronDown,
   Shield
 } from 'lucide-react';
@@ -113,11 +112,6 @@ export default function WizNavbar({ onOpenFreeGuide, onOpenAdmin }) {
               <li>
                 <a href="#guides" className="nav-item-link">
                   <span>Guides</span>
-                </a>
-              </li>
-              <li>
-                <a href="#planner" className="nav-item-link">
-                  <span>Planner</span>
                 </a>
               </li>
               <li>
@@ -275,12 +269,6 @@ export default function WizNavbar({ onOpenFreeGuide, onOpenAdmin }) {
                 <a href="#guides" onClick={() => setMobileOpen(false)} style={{ color: 'var(--text-heading)', textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
                   <Plane size={16} color="var(--green-primary)" />
                   <span>Travel Guides & Visa</span>
-                </a>
-              </li>
-              <li>
-                <a href="#planner" onClick={() => setMobileOpen(false)} style={{ color: 'var(--text-heading)', textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-                  <Calculator size={16} color="var(--green-primary)" />
-                  <span>Trip Cost & Budget Planner</span>
                 </a>
               </li>
               <li>

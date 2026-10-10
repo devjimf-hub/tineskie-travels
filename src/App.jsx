@@ -4,7 +4,6 @@ import WizNavbar from './components/WizNavbar';
 import WizHero from './components/WizHero';
 import WizPromoCards from './components/WizPromoCards';
 import WizItineraries from './components/WizItineraries';
-import CuteBudgetPlanner from './components/CuteBudgetPlanner';
 import ReelsShowcase from './components/ReelsShowcase';
 import WizTravelGuides from './components/WizTravelGuides';
 import CutePresetStudio from './components/CutePresetStudio';
@@ -82,9 +81,6 @@ function MainApp() {
 
         {/* Travel Itineraries Based on Experience */}
         <WizItineraries filterCountry={filterCountry} />
-
-        {/* Interactive Trip Cost & Budget Planner */}
-        <CuteBudgetPlanner onOpenFreeGuide={() => setFreeGuideOpen(true)} />
 
         {/* Cinematic Stories & Viral Reels */}
         <ReelsShowcase />
