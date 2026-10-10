@@ -6,10 +6,6 @@ import {
   Compass, 
   Sparkles, 
   MapPin, 
-  Users, 
-  Video, 
-  Globe, 
-  BookOpen, 
   CheckCircle2, 
   Heart,
   ChevronLeft,
@@ -59,16 +55,6 @@ export default function WizHero({ onOpenFreeGuide }) {
   const handleNext = (e) => {
     if (e) e.stopPropagation();
     setActiveIndex((prev) => (prev + 1) % photos.length);
-  };
-
-  const getStatIcon = (iconName) => {
-    switch (iconName) {
-      case 'Users': return <Users size={18} color="var(--green-primary)" />;
-      case 'Video': return <Video size={18} color="var(--green-primary)" />;
-      case 'Globe': return <Globe size={18} color="var(--green-primary)" />;
-      case 'BookOpen': return <BookOpen size={18} color="var(--green-primary)" />;
-      default: return <Sparkles size={18} color="var(--green-primary)" />;
-    }
   };
 
   // Helper to compute position style for each card in the moving circular carousel
@@ -134,7 +120,7 @@ export default function WizHero({ onOpenFreeGuide }) {
             gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
             gap: '3.5rem',
             alignItems: 'center',
-            marginBottom: '3rem'
+            marginBottom: '0'
           }}
         >
           {/* Left Column: Typography & Actions */}
@@ -622,58 +608,6 @@ export default function WizHero({ onOpenFreeGuide }) {
 
         </div>
 
-        {/* Full-Width 4-Column Stats Banner */}
-        <div 
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            gap: '1.25rem',
-            background: '#FFFFFF',
-            padding: '1.5rem 2rem',
-            borderRadius: '24px',
-            border: '1px solid var(--border-light)',
-            boxShadow: 'var(--shadow-card)'
-          }}
-        >
-          {creatorProfile.stats.map((st, i) => (
-            <div 
-              key={i} 
-              style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                gap: '1rem',
-                paddingRight: i < 3 ? '1rem' : 0,
-                borderRight: i < 3 ? '1px solid rgba(45, 106, 79, 0.08)' : 'none'
-              }}
-              className="stat-banner-item"
-            >
-              <div 
-                style={{
-                  width: '44px',
-                  height: '44px',
-                  borderRadius: '12px',
-                  background: 'var(--green-subtle)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
-                  border: '1px solid rgba(45, 106, 79, 0.1)'
-                }}
-              >
-                {getStatIcon(st.icon)}
-              </div>
-              <div>
-                <div style={{ fontWeight: '900', fontSize: '1.35rem', color: 'var(--text-heading)', lineHeight: '1.1' }}>
-                  {st.value}
-                </div>
-                <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: '600', marginTop: '2px' }}>
-                  {st.label}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
       </div>
 
       {/* Orbit & Keyframe Styles */}
@@ -711,10 +645,6 @@ export default function WizHero({ onOpenFreeGuide }) {
           }
           .hero-orbit-ring {
             display: none !important;
-          }
-          .stat-banner-item {
-            border-right: none !important;
-            padding-right: 0 !important;
           }
         }
       `}</style>
