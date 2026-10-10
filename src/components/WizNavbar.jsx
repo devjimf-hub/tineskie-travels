@@ -6,7 +6,6 @@ import {
   Menu, 
   X, 
   Tag, 
-  Map, 
   Calendar, 
   Plane, 
   Sliders, 
@@ -104,11 +103,6 @@ export default function WizNavbar({ onOpenFreeGuide, onOpenAdmin }) {
               <li>
                 <a href="#deals" className="nav-item-link">
                   <span>Deals</span>
-                </a>
-              </li>
-              <li>
-                <a href="#destinations" className="nav-item-link">
-                  <span>Destinations</span>
                 </a>
               </li>
               <li>
@@ -269,12 +263,6 @@ export default function WizNavbar({ onOpenFreeGuide, onOpenAdmin }) {
                 <a href="#deals" onClick={() => setMobileOpen(false)} style={{ color: 'var(--text-heading)', textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
                   <Tag size={16} color="var(--green-primary)" />
                   <span>Deals & Promo Codes</span>
-                </a>
-              </li>
-              <li>
-                <a href="#destinations" onClick={() => setMobileOpen(false)} style={{ color: 'var(--text-heading)', textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-                  <Map size={16} color="var(--green-primary)" />
-                  <span>Pick Your Adventure</span>
                 </a>
               </li>
               <li>

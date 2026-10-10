@@ -3,7 +3,6 @@ import { DataProvider } from './context/DataContext';
 import WizNavbar from './components/WizNavbar';
 import WizHero from './components/WizHero';
 import WizPromoCards from './components/WizPromoCards';
-import WizDestinations from './components/WizDestinations';
 import WizItineraries from './components/WizItineraries';
 import CuteBudgetPlanner from './components/CuteBudgetPlanner';
 import ReelsShowcase from './components/ReelsShowcase';
@@ -80,9 +79,6 @@ function MainApp() {
 
         {/* Promo Codes & Discounts (Agoda / Klook) */}
         <WizPromoCards />
-
-        {/* Destinations: Pick Your Next Adventure */}
-        <WizDestinations onSelectDestination={handleSelectCountry} />
 
         {/* Travel Itineraries Based on Experience */}
         <WizItineraries filterCountry={filterCountry} />
