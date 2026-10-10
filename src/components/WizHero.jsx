@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useTravelData } from '../context/DataContext';
-import { FacebookIcon } from './SocialIcons';
 import { 
   Tag, 
   Compass, 
@@ -242,30 +241,6 @@ export default function WizHero({ onOpenFreeGuide }) {
               >
                 <Compass size={17} />
                 <span>Browse Itineraries</span>
-              </a>
-
-              <a 
-                href={creatorProfile.facebookUrl}
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.45rem',
-                  padding: '0.85rem 1.35rem',
-                  borderRadius: '9999px',
-                  background: 'var(--green-subtle)',
-                  color: 'var(--green-dark)',
-                  textDecoration: 'none',
-                  fontSize: '0.88rem',
-                  fontWeight: '800',
-                  border: '1px solid rgba(45, 106, 79, 0.2)',
-                  transition: 'all 0.2s ease'
-                }}
-                className="social-hover-btn"
-              >
-                <FacebookIcon size={16} color="var(--green-dark)" />
-                <span>Facebook (320K)</span>
               </a>
             </div>
 
