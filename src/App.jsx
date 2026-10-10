@@ -6,7 +6,6 @@ import WizPromoCards from './components/WizPromoCards';
 import WizItineraries from './components/WizItineraries';
 import ReelsShowcase from './components/ReelsShowcase';
 import WizTravelGuides from './components/WizTravelGuides';
-import CutePresetStudio from './components/CutePresetStudio';
 import GearBagSection from './components/GearBagSection';
 import WizAffiliate from './components/WizAffiliate';
 import FaqSection from './components/FaqSection';
@@ -87,9 +86,6 @@ function MainApp() {
 
         {/* Travel Guides: Plan Smarter, Travel with Confidence */}
         <WizTravelGuides onOpenFreeGuide={() => setFreeGuideOpen(true)} />
-
-        {/* Signature Lightroom Presets Before/After Studio */}
-        <CutePresetStudio onOpenFreeGuide={() => setFreeGuideOpen(true)} />
 
         {/* What's in My Bag / Camera Gear */}
         <GearBagSection />

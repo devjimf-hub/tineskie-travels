@@ -8,7 +8,6 @@ import {
   Tag, 
   Calendar, 
   Plane, 
-  Sliders, 
   Video, 
   Sparkles,
   ChevronDown,
@@ -117,11 +116,6 @@ export default function WizNavbar({ onOpenFreeGuide, onOpenAdmin }) {
               <li>
                 <a href="#reels" className="nav-item-link">
                   <span>Reels</span>
-                </a>
-              </li>
-              <li>
-                <a href="#presets" className="nav-item-link">
-                  <span>Presets</span>
                 </a>
               </li>
             </ul>
@@ -275,12 +269,6 @@ export default function WizNavbar({ onOpenFreeGuide, onOpenAdmin }) {
                 <a href="#reels" onClick={() => setMobileOpen(false)} style={{ color: 'var(--text-heading)', textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
                   <Video size={16} color="var(--green-primary)" />
                   <span>Cinematic Reels</span>
-                </a>
-              </li>
-              <li>
-                <a href="#presets" onClick={() => setMobileOpen(false)} style={{ color: 'var(--text-heading)', textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-                  <Sliders size={16} color="var(--green-primary)" />
-                  <span>Lightroom Presets Studio</span>
                 </a>
               </li>
               <li style={{ paddingTop: '0.85rem', borderTop: '1px solid var(--border-light)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
